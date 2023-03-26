@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resturent online Order Services | myonlineoerder.com</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="stylesheet" href="/Food Order/restu.html"> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" media="screen and (max-width:1020px)"
+            href="css/phone.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Itim&family=Libre+Baskerville:wght@700&family=Roboto:ital,wght@0,400;1,900&family=Sora:wght@300&display=swap"
+            rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+            rel="stylesheet">
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body class="p-3 m-0 border-0 bd-example">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="logo.png" alt="myonlineoerder.com">
+
+
+            </div>
+            <ul>
+
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="nav-item active">
+                    <a class="navbar-brand" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">About Us </a></li>
+                <li class="nav-item active">
+                    <a class="navbar-brand" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">Contact us</a></li>
+                <!--<a href="section" class="contact us"></a>-->
+                <!--<li class="item"></li>-->
+                <li class="nav-item active">
+                    <a class="navbar-brand" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Login/Signing</a>
+                </li>
+
+                <li>
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi
+                        bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5
+                            0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0
+                            .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1
+                            0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi
+                            bi-cart-check-fill" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498
+                                7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0
+                                0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0
+                                .491-.408l1.5-8A.5.5 0 0 0 14.5
+                                3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0
+                                1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0
+                                1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708
+                                0l-1.5-1.5a.5.5 0 1 1 .708-.708L8
+                                8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi
+                                bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8
+                                    1.314C12.438-3.248 23.534 4.735 8 15-7.534
+                                    4.736 3.562-3.248 8 1.314z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor"
+                                    class="bi bi-search-heart-fill" viewBox="0 0
+                                    16 16">
+                                    <path d="M6.5 13a6.474 6.474 0 0 0
+                                        3.845-1.258h-.001c.03.04.062.078.098.115l3.85
+                                        3.85a1 1 0 0 0
+                                        1.415-1.414l-3.85-3.85a1.008 1.008 0 0
+                                        0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502
+                                        6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0
+                                        13Zm0-8.518c1.664-1.673 5.825 1.254 0
+                                        5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                                    </svg>
+                                </li>
+
+
+                            </ul>
+                        </nav>
+                        <!-- <!doctype html>
+        <html lang="en"> -->
+
+
+
+                        <!-- Example Code -->
+                        <section>
+                            <div class="caintainer-sm">
+                                <div id="carouselExampleAutoplaying"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/bg1.png.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="bg3.png.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="bg2.png.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev"
+                                        type="button"
+                                        data-bs-target="#carouselExampleAutoplaying"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next"
+                                        type="button"
+                                        data-bs-target="#carouselExampleAutoplaying"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        <button type="button" class="btn
+                                            btn-primary btn-lg">Order Now</button>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- </html> -->
+
+                        <!-- 
+    <section id="home">
+        <h1 class="h-primary">Welcome to My online meal</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p> Lorem ipsum dolor sit, amet consectetu </p>
+
+
+
+        <button class="btn"> <a href="/Food Order/restu.html" class="btn"> Order
+                now</a></button>
+         <section id="btn1">
+        <li class="btn1">
+            <a href="/Food Order/restu.html" class="btn1">order now</a> 
+            <ul>
+                <button onclick="/login.html/login1.html">order now</button>
+                <nav> 
+
+                    <button class="btn1">Order Now</button>zzzzzz
+                    <a href="/Food Order/restu.html" class="href"></a>
+                </nav>
+            </ul>
+        </li>
+    </section>
+     
+    </section> -->
+                        <section class="services-container">
+
+                            <h1 class="h-primary center">Our Services</h1>
+
+                            <div id="services">
+                                <div class="box">
+                                    <img src="img/1.png.jpg" alt="">
+                                    <a href="/php-restaurant.20210513/index.html" class="services-container"><h2 class="h.secondary center"> Table
+                                        Booking</h2></a>
+                                    
+                                    <p class="center">Lorem ipsum dolor sit,
+                                        amet consectetur
+                                        adipisicing elit.
+                                        Qui vero eius nam quibusdam doloribus
+                                        explicabo cupidi</p>
+                                </div>
+                                <!-- <div id="services"> -->
+                                <div class="box">
+                                    <img src="img/2.png.jpg" alt="">
+                                    
+                                    <h2 class="h.secondary center"> Food
+                                        Ordering</h2>
+                                    <p class="center">Lorem ipsum dolor sit,
+                                        amet consectetur
+                                        adipisicing elit.
+                                        Qui vero eius nam quibusdam doloribus
+                                        explicabo cupidi</p>
+                                </div>
+                                <!-- <div id="services"> -->
+                                <div class="box">
+                                    <img src="img/3.png.jpg" alt="">
+                                    <h2 class="h.secondary center"> Restaurants
+                                        Menu</h2>
+                                    <p class="center">Lorem ipsum dolor sit,
+                                        amet consectetur
+                                        adipisicing elit.
+                                        Qui vero eius nam quibusdam doloribus
+                                        cupidi</p>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </section>
+                        <section id="client-section">
+                            <h1 class="h-primary center">Restaurants Are</h1>
+                            <div id="clients">
+                                <div class="client-item">
+                                    <img src="res1 (1).jpg" alt="Our client">
+                                </div>
+                                <div class="client-item">
+                                    <img src="res1 (2).jpg" alt="Our client">
+                                </div>
+                                <div class="client-item">
+                                    <img src="res1 (3).jpg" alt="Our client">
+                                </div>
+                                <div class="client-item">
+                                    <img src="res1 (4).jpg" alt="Our client">
+                                </div>
+
+                            </div>
+
+                            <div class="menu" id="Menu">
+                                <h1>Our<span>Menu</span></h1>
+
+                                <div class="menu_box">
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="burger-gaf297ac9f_1280.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Buger</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="gulab-jamun-g73552cfe3_1920.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Gulab Jamun</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$10.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="biryani-gdba799e16_1920.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Biryani</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="pizza-g29d0d7994_1920.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>pizza</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="mutton-fry-g274814170_1280.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Motton</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="paneer-gf62299f81_1280.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Paneer</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="hot-dog-gc1595c68e_1920.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Hot Dog</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="chicken-intestine-gd77f07a76_1280.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Chicken</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="/chocolate-pralines-17718234.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Chocolate</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="bananas-gaa5546912_1920.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Ice Cream</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="orange-gd3bb4adfc_1920.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>juice</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="menu_card">
+
+                                        <div class="menu_image">
+                                            <img
+                                                src="burger-gaf297ac9f_1280.jpg">
+                                        </div>
+
+                                        <div class="small_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+
+                                        <div class="menu_info">
+                                            <h2>Sandwich</h2>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Laborum assumenda voluptates
+                                            </p>
+                                            <h3>$20.00</h3>
+                                            <div class="menu_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid
+                                                    fa-star-half-stroke"></i>
+                                            </div>
+                                            <a href="#" class="menu_btn">Order
+                                                Now</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </section>
+                <section id="contact">
+                    <a href="" class="href"></a>
+                    <h1 class="h-primary center">Contact Us</h1>
+                    <div id="contact-box">
+                        <form action=" ">
+                            <div class="form-group">
+                                <label for="name">Name :</label>
+                                <input type="text" name="name " id="name"
+                                    placeholder="Enter
+                                    your name">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Email :</label>
+                                <input type="email" name="name " id="name"
+                                    placeholder="Enter your Email">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Phone Number :</label>
+                                <input type="phone number" name="name "
+                                    id="name"
+                                    placeholder="Enter your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Place :</label>
+                                <input type="place" name="name " id="name"
+                                    placeholder="Enter The Place">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Message :</label>
+                                <textarea name="message" id="message" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+
+                            <button1 class="btn">Submit</button1>
+
+
+
+
+
+
+
+
+                        </form>
+
+                    </div>
+
+
+
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-content">
+                                        <div class="modal-header"
+                                            style="padding:35px 50px;">
+                                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                            <h4><span class="glyphicon
+                                                    glyphicon-lock"></span>
+                                                Login</h4>
+                                        </div>
+                                        <div class="modal-body"
+                                            style="padding:40px 50px;">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="usrname"><span
+                                                            class="glyphicon
+                                                            glyphicon-user"></span>
+                                                        Username</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="usrname"
+                                                        placeholder="Enter
+                                                        email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="psw"><span
+                                                            class="glyphicon
+                                                            glyphicon-eye-open"></span>
+                                                        Password</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="psw"
+                                                        placeholder="Enter
+                                                        password">
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input
+                                                            type="checkbox"
+                                                            value="" checked>Remember
+                                                        me</label>
+                                                </div>
+                                                <button type="submit" class="btn
+                                                    btn-success btn-block"><span
+                                                        class="glyphicon
+                                                        glyphicon-off"></span>
+                                                    Login</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn
+                                                btn-danger btn-default
+                                                pull-left" data-dismiss="modal"><span
+                                                    class="glyphicon
+                                                    glyphicon-remove"></span>
+                                                Cancel</button>
+                                            <p>Not a member? <a href="#">Sign Up</a></p>
+                                            <p>Forgot <a href="#">Password?</a></p>
+                                        </div>
+                                    </div>
+
+                                    <!-- <h5 class="modal-title"
+                                        id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn
+                                        btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn
+                                        btn-primary">Save changes</button>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <!--<script>
+                    $(document).ready(function(){
+                      $("#myBtn").click(function(){
+                        $("#myModal").modal();
+                      });
+                    });
+                    </script>-->
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                        crossorigin="anonymous"></script>
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                        crossorigin="anonymous"></script>
+
+
+                    <!-- Button trigger #exampeModal2
+                    <button type="button" class="btn btn-primary"
+                        data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                        Launch demo modal
+                    </button> -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal-content"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn
+                                        btn-secondary" data-bs-dismiss="Modal">Close</button>
+                                    <button type="button" class="btn
+                                        btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="exampleModal3" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal-content"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                          <div class="col">
+                        
+                                            <h1 >Rishabh singh</h1>
+                                            <span>7549070665</span>
+                                          </div>
+                                          <div class="col">
+                                            <h4>Anand kumar</h4>
+                                            <span>9348735987</span>
+                                          </div>
+                                          <div class="col">
+                                            <h4>Piyush kumar</h4>
+                                            <span>74873548940</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn
+                                        btn-secondary" data-bs-dismiss="Modal">Close</button>
+                                    <button type="button" class="btn
+                                        btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <footer>
+                        <div class="center">
+                            copyright &copy; www class="myonlineorder com" all
+                            rights
+                            reserved!
+                        </div>
+
+
+
+
+
+                    </footer>
+
+                </body>
+            </html>
